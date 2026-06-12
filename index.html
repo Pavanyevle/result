@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MSBTE Result Portal</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+
+        <img src="mainLogo.png"
+             alt="MSBTE Logo">
+
+        <div class="title">
+            <h1>Maharashtra State Board of Technical Education</h1>
+            <p>महाराष्ट्र राज्य तंत्र शिक्षण मंडळ, मुंबई</p>
+        </div>
+
+    </div>
+</header>
+
+<div class="result-container">
+
+    <div class="row">
+        <label>Select Enrollment No. or Seat No.</label>
+
+        <select>
+            <option>(See Below)</option>
+            <option>Enrollment No.</option>
+            <option>Seat No.</option>
+        </select>
+    </div>
+
+    <div class="row">
+        <label>Enter Enrollment No. Or Seat No.</label>
+
+        <input type="text" placeholder="">
+    </div>
+
+    <div class="row">
+        <label>Captcha</label>
+
+        <div class="captcha-box">
+            5Sh7vr34
+        </div>
+    </div>
+
+    <div class="row">
+        <label>Type Above Captcha Here</label>
+
+        <input type="text">
+    </div>
+
+  <div class="button-area">
+    <button class="show-btn" onclick="openResult()">
+        <span class="s-letter">S</span>howResult
+    </button>
+</div>
+
+<script>
+function openResult(){
+    window.location.href = "result.html";
+}
+</script>
+
+</div>
+
+</body>
+</html>

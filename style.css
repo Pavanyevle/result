@@ -1,0 +1,249 @@
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#ffffff;
+    min-height:100vh;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    background:#ffffff;
+    padding:15px 10px;
+}
+
+.header-content{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+}
+
+.header-content img{
+    width:85px;
+    height:auto;
+}
+
+.title{
+    text-align:center;
+}
+
+.title h1{
+    font-size:42px;
+    color:#111;
+    font-weight:700;
+    line-height:1.1;
+}
+
+.title p{
+    font-size:29px;
+    color:#111;
+    margin-top:8px;
+    font-weight:700;
+}
+
+/* =========================
+   FORM CONTAINER
+========================= */
+
+.result-container{
+    width:90%;
+    max-width:980px;
+    margin:35px auto;
+    background:#f5f2c9;
+    border:1px solid #d4cd8f;
+    padding:30px;
+    border-radius:12px;
+
+}
+
+/* =========================
+   FORM ROW
+========================= */
+
+.row{
+    display:flex;
+    align-items:center;
+    margin-bottom:18px;
+}
+
+.row label{
+    width:48%;
+    font-size:26px;
+    font-weight:bold;
+    color:#222;
+}
+
+.row input,
+.row select{
+    width:52%;
+    height:42px;
+    border:1px solid #bdbdbd;
+    background:#fff;
+    padding:0 12px;
+    font-size:18px;
+    outline:none;
+}
+
+.row input:focus,
+.row select:focus{
+    border-color:#888;
+}
+
+/* =========================
+   CAPTCHA
+========================= */
+
+.captcha-box{
+    display:inline-block;
+    background:#fff6b3;
+    border:1px solid #d4c66a;
+    padding:8px 18px;
+    font-size:48px;
+    font-weight:bold;
+    color:#b32121;
+    letter-spacing:3px;
+}
+
+itle h1{
+        font-size:20px;
+    }
+
+    .title h2{
+        font-size:16px;
+    }
+
+    .result-container{
+        width:95%;
+        padding:18px;
+        margin-top:20px;
+    }
+/* =========================
+   BUTTON AREA
+========================= */
+
+.button-area{
+    text-align:right;
+    margin-top:15px;
+}
+
+/* MSBTE STYLE BUTTON */
+
+.show-btn{
+    background:#ffffff;
+    border:3px solid #e7b300;
+    border-radius:12px;
+    padding:3px 22px;
+    font-size:25px;
+    font-weight:700;
+    color:#111;
+    cursor:pointer;
+    min-width:180px;
+    height:50px;
+
+    box-shadow:
+        inset 0 0 2px rgba(255,255,255,0.9),
+        0 1px 2px rgba(0,0,0,0.15);
+
+    transition:all .2s ease;
+}
+
+.show-btn:hover{
+    background:#fffdf2;
+}
+
+.show-btn:active{
+    transform:scale(0.98);
+}
+
+.s-letter{
+    color:#f0b000;
+    font-size:40px;
+    font-weight:bold;
+    text-decoration:underline;
+    text-decoration-thickness:3px;
+    text-underline-offset:4px;
+    margin-right:1px;
+    vertical-align:middle;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .button-area{
+        text-align:center;
+    }
+
+    .show-btn{
+        width:100%;
+        max-width:300px;
+        height:60px;
+        font-size:22px;
+    }
+
+    .s-letter{
+        font-size:42px;
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width:768px){
+
+    .header-content{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .header-content img{
+        width:70px;
+    }
+
+    .t
+    .row{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .row label{
+        width:100%;
+        font-size:16px;
+        margin-bottom:8px;
+    }
+
+    .row input,
+    .row select{
+        width:100%;
+        font-size:16px;
+    }
+
+    .captcha-box{
+        font-size:28px;
+        padding:8px 12px;
+    }
+
+    .button-area{
+        text-align:center;
+    }
+
+    button{
+        width:100%;
+        height:45px;
+    }
+}
